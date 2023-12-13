@@ -79,7 +79,7 @@ export class PortainerClient {
             {
                 Name: payload.name,
                 StackFileContent: payload.file,
-                // swarmID: swarmId
+                Env: []
             },
             {
                 params: {

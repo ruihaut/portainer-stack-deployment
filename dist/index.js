@@ -30321,7 +30321,7 @@ class PortainerClient {
             const { data } = yield this.client.post('/stacks/create/standalone/string', {
                 Name: payload.name,
                 StackFileContent: payload.file,
-                // swarmID: swarmId
+                Env: []
             }, {
                 params: {
                     endpointId: payload.endpoint
