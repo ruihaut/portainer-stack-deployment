@@ -42,10 +42,7 @@ async function run() {
             }
         } else {
             core.startGroup('Create new stack');
-            core.info("Creating new stack...");
-            core.info(`Stack name: ${cfg.stack.name}`);
-            core.info(`Stack endpoint: ${cfg.portainer.endpoint}`);
-            core.info(`Stack file: ${cfg.stack.file}`);
+            core.info(`Creating new stack...\n\rStack name: ${cfg.stack.name}\n\rStack endpoint: ${cfg.portainer.endpoint}\n\rStack file: ${cfg.stack.file}`);
             await portainer.createStack({
                 endpoint: cfg.portainer.endpoint,
                 name: cfg.stack.name,
