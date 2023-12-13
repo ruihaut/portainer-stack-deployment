@@ -30210,7 +30210,10 @@ function run() {
             }
             else {
                 core.startGroup('Create new stack');
-                core.info("Creating new stack dadza...");
+                core.info("Creating new stack...");
+                core.info(`Stack name: ${cfg.stack.name}`);
+                core.info(`Stack endpoint: ${cfg.portainer.endpoint}`);
+                core.info(`Stack file: ${cfg.stack.file}`);
                 yield portainer.createStack({
                     endpoint: cfg.portainer.endpoint,
                     name: cfg.stack.name,
